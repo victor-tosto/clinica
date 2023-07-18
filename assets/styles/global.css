@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('../styles/components/header.css');
+@import url('../styles/components/appointments.css');
+
+:root {
+
+    /* Colors */
+    --dark-gray: #464646;
+    --gray: #A3A3A3;
+    --white: #FFF;
+    --yellow: #FFB050;
+    --blue: #4894FF;
+    --border-light-gray: 1px solid #ECECEC;
+
+    /* Font Family */
+    --font-family: 'Montserrat', sans-serif;
+
+    /* Font Size */
+    font-size: 62.5%;
+
+}
+
+/* Global CSS */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--font-family);
+    background-color: rgb(248, 244, 255);
+    padding: 0 1.6rem;
+}
