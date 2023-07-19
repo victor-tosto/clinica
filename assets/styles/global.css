@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 @import url('../styles/components/header.css');
 @import url('../styles/components/appointments.css');
+@import url('../styles/components/footer.css');
 
 :root {
 
@@ -29,5 +30,8 @@ body {
     min-height: 100vh;
     font-family: var(--font-family);
     background-color: rgb(248, 244, 255);
-    padding: 0 1.6rem;
+}
+
+.wrapper {
+    padding: 0 1.6rem 7.4rem;
 }
