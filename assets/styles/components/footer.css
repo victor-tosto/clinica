@@ -9,11 +9,16 @@
     padding: 0.8rem 1.4rem;
 }
 
-.footer__button {
-    position: fixed;
+.footer__button-area {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
     bottom: 5.6rem;
     right: 0;
     margin: 1.6rem;
+}
+
+.button-area__more, .button-area__cam, .button-area__pin {
     border: none;
     outline: none;
     background-color: var(--blue);
@@ -22,6 +27,34 @@
     height: 5.6rem;
     border-radius: 50%;
     font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.50));
+    transition: .2s;
+}
+
+.button-area__cam, .button-area__pin {
+    display: none;
+}
+
+.button-area__cam {
+    transform: translateY(100%);
+}
+
+.button-area__pin {
+    transform: translateY(200%);
+}
+
+.button-area__cam.open, .button-area__pin.open {
+    display: flex;
+    transform: translateY(0);
+}
+
+.cam__btn, .pin__btn {
+    fill: var(--white);
+    width: 2rem;
+    height: 2rem;
 }
 
 .navbar__container {
