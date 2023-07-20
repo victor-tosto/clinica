@@ -35,3 +35,22 @@ body {
 .wrapper {
     padding: 0 1.6rem 7.4rem;
 }
+
+.overlay {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background-color: var(--dark-gray);
+    opacity: 0.75;
+}
+
+.overlay.open {
+    display: block;
+    z-index: 2;
+}
+
+.suppress-scroll {
+    overflow: hidden;
+}

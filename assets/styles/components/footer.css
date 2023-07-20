@@ -1,21 +1,56 @@
-.footer {
+.footer__navbar {
     width: 100%;
-    z-index: 1;
     position: fixed;
     bottom: 0;
     background-color: var(--white);
     border-radius: 1.2rem 1.2rem 0 0;
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.06);
     padding: 0.8rem 1.4rem;
+    z-index: 1;
 }
 
 .footer__button-area {
     display: flex;
     flex-direction: column-reverse;
-    position: absolute;
+    align-items: end;
+    position: fixed;
     bottom: 5.6rem;
     right: 0;
     margin: 1.6rem;
+    z-index: 3;
+}
+
+.button-area {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1.6rem;
+    opacity: 0;
+    transition: .3s;
+}
+
+.button-area__text-video, .button-area__text-home {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.92rem;
+    color: var(--dark-gray);
+    padding: 0.2rem 0.8rem;
+    background-color: var(--white);
+    border-radius: 232.3rem;
+    max-height: 2.3rem;
+    transition: .3s;
+}
+
+.button-area__text-video {
+    transform: translateY(100%);
+}
+
+.button-area__text-home {
+    transform: translateY(200%);
+}
+
+.footer__button-area.open {
+    gap: 1.6rem;
 }
 
 .button-area__more, .button-area__cam, .button-area__pin {
@@ -31,11 +66,11 @@
     align-items: center;
     justify-content: center;
     filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.50));
-    transition: .2s;
+    transition: .3s;
 }
 
-.button-area__cam, .button-area__pin {
-    display: none;
+.button-area__more {
+    z-index: 3;
 }
 
 .button-area__cam {
@@ -46,8 +81,14 @@
     transform: translateY(200%);
 }
 
-.button-area__cam.open, .button-area__pin.open {
-    display: flex;
+.button-area.open {
+    opacity: 1;
+}
+
+.button-area.open .button-area__cam, 
+.button-area.open .button-area__pin, 
+.button-area.open .button-area__text-video,
+.button-area.open .button-area__text-home {
     transform: translateY(0);
 }
 
