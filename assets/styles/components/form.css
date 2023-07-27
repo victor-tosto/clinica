@@ -23,6 +23,7 @@
     outline: none;
     font-family: var(--font-family);
     font-size: 1.6rem;
+    transition: .2s;
 }
 
 .form__input::placeholder {
@@ -49,7 +50,7 @@
     font-family: inherit;
     padding: 1.6rem;
     margin-top: 2rem;
-    width: 8.3rem;
+    width: max-content;
     color: var(--white);
     background-color: var(--blue);
     box-shadow: 0 4px 16px 0px rgba(72, 148, 255, 0.16);
@@ -57,4 +58,19 @@
     border: none;
     outline: none;
     cursor: pointer;
+    transition: .2s;
+}
+
+.form__button:hover {
+    background-color: #4786F0;
+}
+
+.form__button:active {
+    background-color: #4373DC;
+    border: 2px solid #57A4FF;
+}
+
+.form__button:focus-within {
+    border: 2px solid var(--blue);
+    background-color: #4062C9;
 }

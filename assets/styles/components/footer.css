@@ -113,10 +113,17 @@
     line-height: 1.92rem;
     color: var(--dark-gray);
     text-decoration: none;
+    transition: .2s;
+}
+
+.container__item:hover .item__link .link__image, .container__item:hover .item__link {
+    color: var(--blue);
+    fill: var(--blue);
 }
 
 .link__image {
     fill: var(--dark-gray);
+    transition: .2s;
 }
 
 .item__link.active, .item__link.active .link__image {
