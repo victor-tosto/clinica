@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="Status Concluído" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20ANDAMENTO&color=GREEN&style=for-the-badge">
+  <img alt="Status Concluído" src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge">
 </p>
 
 <br>
@@ -36,9 +36,7 @@
 
 ## 📁 Acesso ao projeto
 
-<p>Projeto em andamento</p>
-
-<!-- <p>Para visualizar a versão atual do projeto é só<a href=""> "Clicar aqui".</a>🚀</p> -->
+<p>Para visualizar a versão atual do projeto é só<a href="https://clinica-pied.vercel.app/"> "Clicar aqui".</a>🚀</p>
 
 ## 👨‍💻 Autor
 
