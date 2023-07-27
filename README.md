@@ -31,6 +31,8 @@
 - [X] Dia 3: Adaptar o tamanho das fontes para as outras telas
 - [x] Dia 4: Organizar o layout da página utilizando media queries
 - [x] Dia 5: Transformar o rodapé em um menu lateral para telas desktop
+- [x] Dia 6: Criação do formulário para telas desktop
+- [x] Dia 7: Deploy do projeto
 
 ## 📁 Acesso ao projeto
 
