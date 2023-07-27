@@ -19,7 +19,7 @@
 }
 
 .appointments__list:last-child {
-    padding: 0;
+    padding-bottom: 0;
 }
 
 .list__item {
@@ -102,7 +102,6 @@
 }
 
 .button-area__video, .button-area__audio, .button-area__address {
-    width: 100%;
     border: none;
     outline: none;
     font-size: 1.4rem;
@@ -112,6 +111,14 @@
     border-radius: 0.8rem;
     font-family: var(--font-family);
     background-color: transparent;
+}
+
+.button-area__video, .button-area__audio {
+    width: calc(100% / 2 - 0.8rem);
+}
+
+.button-area__address {
+    width: 100%;
 }
 
 .button-area__video {
@@ -129,4 +136,69 @@
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+
+    .appointments__title {
+        font-size: 2.6rem;
+        padding-bottom: 3rem;
+    }
+
+    .appointments__list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .list__item {
+        width: calc(100% / 2 - 1.5rem);
+    }
+
+    .patient-info__avatar {
+        height: 5rem;
+    }
+    
+    .patient-info__name {
+        font-size: 1.8rem;
+    }
+
+    .patient-info__appointment-type {
+        font-size: 1.6rem;
+    }
+
+    .patient-info__appointment-type img {
+        height: 1.5rem;
+    }
+
+    .patient-info__chat {
+        height: 5rem;
+    }
+
+    .appointment-info__hour {
+        font-size: 1.6rem;
+    }
+
+    .button-area__video, .button-area__audio, .button-area__address {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .appointments {
+        padding: 0 3rem;
+    }
+
+    .appointments__list {
+        gap: 1.5rem;
+    }
+    
+    .list__item {
+        width: calc(100% / 3 - 1rem);
+    }
+
 }

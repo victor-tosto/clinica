@@ -1,0 +1,60 @@
+.appointment-form {
+    padding: 5rem 0 0;
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__label {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--gray-label);
+}
+
+.form__input {
+    background-color: var(--white);
+    border: var(--border-light-gray);
+    border-radius: 0.8rem;
+    padding: 1.6rem;
+    outline: none;
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+}
+
+.form__input::placeholder {
+    font-family: var(--font-family);
+    font-size: 1.6rem;
+}
+
+.input__option {
+    font-size: 1.6rem;
+    font-family: var(--font-family);
+}
+
+.form__input:hover {
+    border-color: #CFCFCF;
+}
+
+.form__input:focus-within {
+    border: 2px solid var(--blue);
+}
+
+.form__button {
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: inherit;
+    padding: 1.6rem;
+    margin-top: 2rem;
+    width: 8.3rem;
+    color: var(--white);
+    background-color: var(--blue);
+    box-shadow: 0 4px 16px 0px rgba(72, 148, 255, 0.16);
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

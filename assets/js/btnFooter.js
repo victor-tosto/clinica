@@ -12,4 +12,4 @@ btnMore.addEventListener('click', () => {
     btns.forEach(btn => btn.classList.toggle('open'));
     activeEvent.forEach(btn => btn.classList.toggle('open'));
 
-})
+});
